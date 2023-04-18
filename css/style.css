@@ -1,0 +1,38 @@
+/* General rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    height: 80px;
+}
+#logo_sm {
+    display: none;
+    height: 2.5rem;
+}
+#magnifying_glass {
+    padding: 10px;
+}
+
+/* Mediaquery */
+/* Extra small 	None <576px
+Small sm ≥ 576px
+Medium md ≥ 768px
+Large lg ≥ 992px
+Extra large xl ≥ 1200px
+Extra extra large xxl ≥ 1400px */
+
+@media screen and (max-width: 992px){
+
+    .viewport_md,
+    #logo_lg {
+        display: none;
+    }
+
+    #logo_sm {
+        display: block;
+    }   
+}
