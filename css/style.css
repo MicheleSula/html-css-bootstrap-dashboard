@@ -106,7 +106,7 @@ Extra extra large xxl ≥ 1400px */
         display: block;
     }
 
-    #content-tables {
+    .section_viewport_small {
         width: calc(100% - 1rem);
     }
 }
