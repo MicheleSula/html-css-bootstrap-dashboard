@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 main {
     height: calc(100vh - 80px);
 }
@@ -14,6 +17,9 @@ main {
     }
     .darkblue_background {
         background-color: #051e34;
+    }
+    .breadcrumbs_blue_background {
+        background-color: #165bba;
     }
 
 
@@ -51,10 +57,10 @@ header {
     width: calc(100% - 150px);
     height: 100%;
 }
+
 /* breadcrumbs section */
 #breadcrumbs {
     width: 100%;
-    height: 150px;
 }
 
 
@@ -82,4 +88,8 @@ Extra extra large xxl ≥ 1400px */
 /************************************************* DEBUGGING   *************************************************/
 #main-body {
     background-color: blueviolet;
+}
+
+#breadcrumbs {
+    border: 1px solid white;
 }
