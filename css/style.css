@@ -71,7 +71,11 @@ header {
 #content-tables {
     width: 100%;
 }
-
+.table img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
 
 
 
