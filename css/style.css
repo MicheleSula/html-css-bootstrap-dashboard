@@ -62,6 +62,16 @@ header {
 #breadcrumbs {
     width: 100%;
 }
+#canvas_button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Classes section */
+#content-tables {
+    width: 100%;
+}
+
 
 
 
@@ -72,6 +82,8 @@ Medium md ≥ 768px
 Large lg ≥ 992px
 Extra large xl ≥ 1200px
 Extra extra large xxl ≥ 1400px */
+
+
 
 @media screen and (max-width: 992px){
 
@@ -85,6 +97,19 @@ Extra extra large xxl ≥ 1400px */
     }   
 }
 
+    /* Offcanvas mediaqueries */
+    @media screen and (max-width: 2000px) and (min-width: 769px) {
+        .offcanvas-size {
+            --bs-offcanvas-width: min(50vw) !important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .offcanvas-size-sm {
+            --bs-offcanvas-width: min(100vw) !important;
+        }
+    }
+
+
 /************************************************* DEBUGGING   *************************************************/
 #main-body {
     background-color: blueviolet;
@@ -92,4 +117,10 @@ Extra extra large xxl ≥ 1400px */
 
 #breadcrumbs {
     border: 1px solid white;
+}
+
+#content-tables {
+    height: 600px;
+    background-color: aquamarine;
+    border: 1px solid black;
 }

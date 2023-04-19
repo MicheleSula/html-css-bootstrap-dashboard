@@ -153,7 +153,7 @@
                                 <span class="badge rounded-pill breadcrumbs_blue_background fw-light viewport_md">
                                     Boolean web app
                                 </span>
-                                
+
                                 <span class="badge rounded-pill breadcrumbs_blue_background fw-light viewport_md">
                                     Boolean blog app
                                 </span>
@@ -175,21 +175,149 @@
                                 </span>
 
                                 <!-- Button to display off-canvas -->
-                                <button class="btn btn-primary border border-white rounded-2 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <button id="canvas_button" class="btn btn-primary border border-white rounded-2 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
-                                <!-- Off-canvas from Bootstrap -->
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                <!-- Offcanvas from Bootstrap -->
+                                <div class="offcanvas offcanvas-end offcanvas-size-sm offcanvas-size" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- Offcanvas body -->
+                                    <div class="offcanvas-body">
+                                        <form class="container-fluid">
+
+                                            <!-- Row #1 -->
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#nome" class="form-label fw-semibold">Nome</label>
+
+                                                    <input type="text" id="nome" class="form-control">
+                                                </div>
+
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#cognome" class="form-label fw-semibold">Cognome</label>
+
+                                                    <input type="text" id="cognome" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- Row #2 -->
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#email" class="form-label fw-semibold">Email</label>
+
+                                                    <div id="email" class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+
+                                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#password" class="form-label fw-semibold">Password</label>
+
+                                                    <input type="password" id="password" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- Row #3 -->
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#email" class="form-label fw-semibold">Indirizzo E-mail</label>
+
+                                                    <div id="email" class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+
+                                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#password" class="form-label fw-semibold">Password</label>
+
+                                                    <input type="password" id="password" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- Row #4 -->
+                                            <div class="row">
+                                                <div class="col-12 mt-3">
+                                                    <label for="#address" class="form-label fw-semibold">Indirizzo</label>
+
+                                                    <input type="text" id="address" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- Row #5 -->
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 mt-3">
+                                                    <label for="#city" class="form-label fw-semibold">Città</label>
+
+                                                    <input type="text" id="city" class="form-control">
+                                                </div>
+
+                                                <div class="col-12 col-sm-4 mt-3">
+                                                    <label for="#country" class="form-label fw-semibold">Stato</label>
+
+                                                    <select id="country" class="form-select form-select-md" aria-label=".form-select-sm example">
+                                                        <option selected>Scegli...</option>
+                                                        <option value="1">Opzione 1</option>
+                                                        <option value="2">Opzione 2</option>
+                                                        <option value="3">Opzione 3</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12 col-sm-2 mt-3">
+                                                    <label for="#cap" class="form-label fw-semibold">CAP</label>
+
+                                                    <input type="text" id="cap" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- Row #6 -->
+                                            <div class="row">
+                                                <div class="col-12 mt-3">
+                                                    <label for="#picture" class="form-label fw-semibold">Foto</label>
+                                                
+                                                    <div id="picture" class="input-group">
+                                                        <span class="input-group-text" id="basic-addon3">Scegli file</span>
+
+                                                        <input type="text" class="form-control" placeholder="Nessun file selezionato" aria-describedby="basic-addon3">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check mt-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="check">
+                                                
+                                                <label class="form-check-label" for="#check">Seleziona per proseguire</label>
+                                            </div>
+
+                                            <!-- Buttons -->
+                                            <div class="mt-2">
+                                                <button class="btn btn-primary me-1">Salva</button>
+
+                                                <button class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="offcanvas-body">
-                                    ...
-                                </div>
-                            </div>
+                            </div>       
+                        </div>
+                    </div>
                 </section>
-                    
+
+                <!-- Classes section -->
+                <div id="content-tables"class="container-fluid">
+                    <div class="row">
+
+                    </div>
+                </div>  
 
             </section>
 
