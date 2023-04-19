@@ -115,16 +115,7 @@ Extra extra large xxl ≥ 1400px */
 
 
 /************************************************* DEBUGGING   *************************************************/
-#main-body {
-    background-color: blueviolet;
-}
 
 #breadcrumbs {
     border: 1px solid white;
-}
-
-#content-tables {
-    height: 600px;
-    background-color: aquamarine;
-    border: 1px solid black;
 }
