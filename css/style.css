@@ -37,7 +37,8 @@ header {
 
 /* Side-navbar */
 #side-nav {
-    width: 150px;
+    width: 10vw;
+    min-width: 50px;
     height: 100%;
     background-image: url("../img/sidebar-bg.png");
 }
@@ -54,7 +55,7 @@ header {
 
 /* Main body */
 #main-body {
-    width: calc(100% - 150px);
+    width: calc(100% - 10vw);
     height: 100%;
 }
 
@@ -87,8 +88,13 @@ Large lg ≥ 992px
 Extra large xl ≥ 1200px
 Extra extra large xxl ≥ 1400px */
 
-
-
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .viewport_sm {
+        display: none;
+    }
+}
+/* Tablet */
 @media screen and (max-width: 992px){
 
     .viewport_md,
@@ -98,7 +104,11 @@ Extra extra large xxl ≥ 1400px */
 
     #logo_sm {
         display: block;
-    }   
+    }
+
+    #content-tables {
+        width: calc(100% - 1rem);
+    }
 }
 
     /* Offcanvas mediaqueries */
@@ -116,6 +126,3 @@ Extra extra large xxl ≥ 1400px */
 
 /************************************************* DEBUGGING   *************************************************/
 
-#breadcrumbs {
-    border: 1px solid white;
-}
